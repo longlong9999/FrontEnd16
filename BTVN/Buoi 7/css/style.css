@@ -1,0 +1,183 @@
+#start{
+	width: 100%;
+	padding-bottom: 20px;
+	background-color: #F5F5F5;
+}
+#left{
+	width: 50%;
+	height: 50px;
+	float: left;
+	
+}
+#left>p{
+	margin-left: 100px;
+}
+#menu{
+	width: 50%;
+	height: 50px;
+	float: right;
+	
+}
+#menu ul{
+	list-style: none;
+	
+}
+.item a{
+	text-decoration: none;
+	padding-left: 30px;
+	color: blue;
+}
+.item{
+	display: inline-block;	
+}
+.clear{
+	clear: both;
+}
+#mid{
+	width: 100%;
+	padding-top: 50px;
+	background-color: #F5F5F5;
+}
+.icon1{
+	width: 25%;
+	float: left;
+	font-size: -webkit-xxx-large;
+    color: orange;
+}
+.icon1>i{
+	padding-left: 100px;
+}
+.icon>p{
+	size: 10px;
+	color: black;
+}
+#mid2{
+	width: 100%;
+}
+#img1{
+	width: 50%;
+	float: left;
+}
+#img2{
+	width: 50%;
+	float: left;
+}
+.mid3{
+	width: 100%;
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+.item-mid3{
+	width: 33%;
+	float: left;
+}
+.icon{
+	width: 30%;
+	float: left;
+	font-size: -webkit-xxx-large;
+	color: orange;
+}
+.paragrap{
+	width: 70%;
+	float: left;
+}
+#late input{
+	border-radius: 10px;
+    width: 110px;
+    
+}
+#late{
+
+	background-color: orange;
+}
+#late h3{
+	color: white;
+}
+#lates{
+	padding-top: 20px;
+	padding-bottom: 40px;
+	background-color: #FF6347;
+}
+#late2{
+	width: 100%;	
+	background-color: #F5F5F5;
+}
+.picture{
+	width: 20%;
+	float: left;
+   padding-left:30px;
+   padding-right: 30px;
+} 
+#late2>p{
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+#late3{
+	width: 100%;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background-color: #1C1C1C;
+}
+.info{
+	width: 30%;
+	float: left;
+	padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+}
+.iconn{
+	margin-top: 20px;
+}
+.iconn>i{
+	padding-left: 10px;
+}
+.info>input{
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom:10px;
+	border: none;
+    background-color: #1C1C1C;
+    border-bottom: #fff solid 1px;
+    outline: none;
+    color: #ffffff;
+}
+.info3{
+	padding-top: 30px;
+}
+#lategame{
+	color: white;
+	background-color: black;
+}
+.item:first-child{
+	line-height: 50px;
+	color: blue;
+	display: none;
+}
+
+@media (max-width: 700px) {
+	.mgi>img{
+		max-width: 100%;
+		height: auto;
+	} 
+	.item:first-child{
+	display: block;
+	}
+	.item{
+		display: none;
+	}
+	.item:first-child{
+		display: block;
+	}
+	#img1>img{
+		max-width: 100%;
+		height: auto;
+	}
+	#img2>img{
+	
+		max-width: 100%;
+		height: auto;
+	}
+	
+}
+
+
