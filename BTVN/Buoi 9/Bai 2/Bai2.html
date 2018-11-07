@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<table width="500px" height="200px" border="2px" bordercolor="#9C9C9C" bgcolor="#B9D3EE" align="center" >
+		<tr class="color">
+			<td><input type="checkbox" id="cb1_1" class="cb1"></td>
+			<td>Lorem Lorem ipsum dolor sit amet, consectetur.</td>
+		</tr>
+		
+		<tr class="color">
+			
+			<td><input type="checkbox" id="cb1_2" class="cb1"></td>
+			<a href="#"><td>Lorem Lorem ipsum dolor sit amet, consectetur.</td></a>
+
+		</tr>
+
+		<tr class="color">
+			<td><input type="checkbox" id="cb1_3" class="cb1"></td>
+			<td>Lorem Lorem ipsum dolor sit amet, consectetur.</td>
+		</tr>
+		<tr class="color">
+			<td><input type="checkbox" id="cb1_4" class="cb1"></td>
+			<td>Lorem Lorem ipsum dolor sit amet, consectetur.</td>
+		</tr>
+		<tr class="color">
+			<td><input type="checkbox" id="cb1_5" class="cb1"></td>
+			<td>Lorem Lorem ipsum dolor sit amet, consectetur.</td>
+		</tr>
+		<tr class="color">
+			<td><input type="checkbox" id="cb1_6" class="cb1"></td>
+			<td>Lorem Lorem ipsum dolor sit amet, consectetur.</td>
+		</tr>
+		<tr class="color">
+			<td><input type="checkbox" id="cb1_7" class="cb1"></td>
+			<td>Lorem Lorem ipsum dolor sit amet, consectetur.</td>
+		</tr>
+		<tr class="color">
+			<td><input type="checkbox" id="cb1_8" class="cb1"></td>
+			<td>Lorem Lorem ipsum dolor sit amet, consectetur.</td>
+		</tr>		
+		<tr class="color">
+			<td colspan ="2" rowspan="2"><input type="checkbox" id="cb1_NTL"  onchange="togglecheckboxes(this,'cb1')">Check All</td>			
+		</tr>		
+	</table>	
+</body>
+</html>
+<script type="text/javascript">
+	function togglecheckboxes(NTL,cn){
+		var cbarray=document.getElementsByClassName(cn);
+		for (var i = 0; i<cbarray.length; i++) {
+			var cb=document.getElementById(cbarray[i].id);
+			cb.checked=NTL.checked;
+			
+		}
+	}
+</script>

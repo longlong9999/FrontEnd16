@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<h4>Cỡ chữ</h4>		
+	<input type="button" value="Mặc định" onclick="change_font_size1()"/>
+	<input type="button" value="Lớn" onclick="change_font_size2()"/>
+	<input type="button" value="Nhỏ" onclick="change_font_size3()"/>
+	<div id="message">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit animi, officiis dolores assumenda adipisci natus ipsam, quo! Suscipit, nulla ratione nemo, natus nostrum ea. Pariatur, expedita saepe. Enim, aut deleniti.</p>
+	</div>	
+	<script type="text/javascript">
+		var message = document.getElementById('message');
+		
+		function change_font_size1()
+		{
+			message.style.fontSize = '16px';
+		}
+		function change_font_size2()
+		{
+			var fontSizeOld = window.getComputedStyle(message, null).getPropertyValue('font-size');
+			var fontSizeNew = parseFloat(fontSizeOld) + parseFloat(fontSizeOld)*0.4; 
+			message.style.fontSize = fontSizeNew+'px';
+		}
+		function change_font_size3()
+		{
+			var fontSizeOld = window.getComputedStyle(message, null).getPropertyValue('font-size');
+			var fontSizeNew = parseFloat(fontSizeOld) - parseFloat(fontSizeOld)*0.4; 
+			message.style.fontSize = fontSizeNew+'px';
+		}
+	</script>
+</body>
+</html>

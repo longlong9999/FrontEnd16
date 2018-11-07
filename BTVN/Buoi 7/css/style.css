@@ -177,6 +177,12 @@
 		max-width: 100%;
 		height: auto;
 	}
+	.picture{
+		float: none;
+	}
+	.icon1{
+		float: none;
+	}
 	
 }
 
