@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div>
+		<input type="button" id="but1"name="" onclick="comeback()" value="<">
+		<input type="button" id="but2" name="" onclick="next()" value=">">
+	</div>
+	
+	
+	<div class="image">
+	<div class="item">
+		<img  id="nextto"
+		src="image/barcelona_2016-2017.jpg">
+	</div>
+	<div class="item">
+		<img  class="img234" src="image/hinh-nen-3d-bong-da-tophinhpro.blogspot.com-4756.jpg">
+	</div>
+	<div class="item">
+		<img class="img234" src="image/maxresdefault.jpg">
+	</div>
+	<div class="item">
+		<img class="img234" src="image/tuyen-chon-32-hinh-nen-bong-da-dep-nhat-moi-thoi-dai-1488999558-5.jpg">
+	</div>
+	</div>
+	
+</body>
+</html>
+<script type="text/javascript">
+	var slideimage=["image/barcelona_2016-2017.jpg","image/hinh-nen-3d-bong-da-tophinhpro.blogspot.com-4756.jpg","image/maxresdefault.jpg","image/tuyen-chon-32-hinh-nen-bong-da-dep-nhat-moi-thoi-dai-1488999558-5.jpg"];
+	var number=0;
+	function next(){
+		var nextto=document.getElementById("nextto");
+		number++;
+		if (number>=slideimage.length) {
+			number=0;
+		}
+		nextto.src=slideimage[number];
+
+
+	}
+	function comeback(){
+		var nextto=document.getElementById("nextto");
+		number--;
+		if (number<0) {
+			number=slideimage.length-1;
+		}
+		nextto.src=slideimage[number];
+
+
+	}
+</script>

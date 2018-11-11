@@ -1,0 +1,60 @@
+#but1:hover{
+	opacity: 2;
+	background: green;
+}
+#but2:hover{
+	opacity: 2;
+	background: green;
+}
+#but1{
+	cursor: pointer;
+	opacity: 0.2;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 5px;
+	width: 4%;
+	left:  22%;
+	position: absolute;
+	height: 60px;	
+    top:70%;
+    font-size: 30px;
+	color: red;
+}
+#but2{
+	cursor: pointer;
+	opacity: 0.2;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 5px;
+	width: 4%;
+	right: 20%;
+	position: absolute;
+	height: 60px;	
+    top:70%;
+    font-size: 30px;
+	color: red;
+}
+.gif{
+	width: 10%;
+	float: left;
+	padding-right: 200px;
+}
+.nancy{
+	float: left;
+	width: 10%;
+}
+.image{
+	width: 60%;
+	float: left;
+}
+#nextto{
+	    width: 700px;
+		height: 600px;
+				
+}
+.img234{
+	 width: 700px;
+		height: 600px;
+		
+		display: none;
+}
