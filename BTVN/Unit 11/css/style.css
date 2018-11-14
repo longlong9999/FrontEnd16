@@ -1,0 +1,27 @@
+.err{
+	color: white;
+}
+#body{
+	width: 700px;	
+	margin-left: 280px;
+}
+#strart{
+	background-color: red;
+	height:180px;
+}
+#strart>input{
+	border:none;
+}
+#strart>button{
+	border:none;
+}
+#late>table{
+	width: 700px;	
+	background-color: #F5F5F5;
+}
+#late>table input{
+	float: right;
+}
+.item :hover{
+ background-color: #DCDCDC;
+}
