@@ -1,1 +1,34 @@
-
+.body{
+	width: 700px;
+	height: 600px;
+	margin-left: 300px;
+	background-color: #1C1C1C;
+}
+.strart{
+	width: 600px;
+	height: 300px;
+	margin-left: 50px;
+	background-color: #4F4F4F;	
+}
+.fa-plus{
+	background-color: #7CFC00;
+}
+.content{
+	background-color: #4F4F4F;
+}
+.tab{
+	background-color: #4F4F4F;
+}
+.fa-minus{
+	display: none;
+	background-color: #7CFC00;
+}
+.the-p{
+	padding-left: 100px;
+	margin-top: 50px;
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+.clear{
+	clear: both;
+}

@@ -8,61 +8,67 @@
 	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
 </head>
 <body>
-	<div class="wraper">
-		<div class="container">
+	<div class="body">
+		<div  class="the-p" ><i><h1 style="color: white"> Akordeon</h1></i> <u style="color: #98FB98"> Vector PSD</u> <br>
+			<p style="color: white">---->My style</p>
+		</div>
+		<div class="clear"></div>	
+		<div class="strart">
 
-			<div class="tab" id="">
-				<button class="fa-plus"><i class="fas fa-plus"></i> cong</button>
-				<button class="fa-minus"><i class="fas fa-minus"></i> tru</button> 
+			<div class="tab" >
+				<button class="fa-plus"><i class="fas fa-plus"></i></button>
+				<button class="fa-minus"><i class="fas fa-minus"></i></button> This is an expanded panel<hr style="border-color: black;border-top: none;">
 			</div>
 			<div class="content" style="display: none">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, eligendi fugiat necessitatibus illo deleniti, 
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, eligendi fugiat necessitatibus illo deleniti,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi sit consequuntur doloremque!<hr style="border-color: black;border-top: none;">
 			</div>
 
 			<div class="tab">
-				<button class="fa-plus"><i class="fas fa-plus"></i> cong</button>
-				<button class="fa-minus"><i class="fas fa-minus"></i> tru</button> 
+				<button class="fa-plus"><i class="fas fa-plus"></i></button>
+				<button class="fa-minus"><i class="fas fa-minus"></i></button>This is an expanded panel <hr style="border-color: black;border-top: none;">
 			</div>
-			<div class="content">
-				Lorem ipsum dolor sit.
-			</div>
-
-			<div class="tab">
-				<button class="fa-plus"><i class="fas fa-plus"></i> cong</button>
-				<button class="fa-minus"><i class="fas fa-minus"></i> tru</button> 
-			</div>
-			<div class="content">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos!
+			<div class="content" style="display: none">
+				Lorem ipsum dolor Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis debitis, dignissimos amet.<hr style="border-color: black;border-top: none;">
 			</div>
 
 			<div class="tab">
-				<button class="fa-plus"><i class="fas fa-plus"></i> cong</button>
-				<button class="fa-minus"><i class="fas fa-minus"></i> tru</button> 
+				<button class="fa-plus"><i class="fas fa-plus"></i></button>
+				<button class="fa-minus"><i class="fas fa-minus"></i></button> This is an expanded panel<hr style="border-color: black;border-top: none;">
 			</div>
-			<div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae.</div>
-		</div>
-	   
+			<div class="content" style="display: none">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos! Lorem ipsum dolor sit amet, consectetur adipisicing.
+				<hr style="border-color: black;border-top: none;">
+			</div>
+
+			<div class="tab">
+				<button class="fa-plus"><i class="fas fa-plus"></i></button>
+				<button class="fa-minus"><i class="fas fa-minus"></i></button> This is an expanded panel
+				<hr style="border-color: black;border-top: none;">
+			</div>
+			<div class="content" style="display: none">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae. Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
+		</div>	   
 		<script type="text/javascript">
 			$(function(){
-				$('body').on('click','.tab',function(){
-					if($(this).hasClass('fa-minus')){
+				$('body').on('click','.fa-plus',function(){
+					$(this).css('display','none')
+					$('.content').css('display','inline-block')
+				})
+				$('body').on('click','.fa-minus',function(){
+					$(this).css('display','none')
+					$('.content').css('display','none')
+				})
+				/*if($(this).hasClass('fa-minus')){
 						$(this).remove('.fa-minus')
 						$(this).addClass('.fa-plus')
+						
 					}			
 					else ($(this).hasClass('fa-plus')){
 						$(this).addClass('.fa-plus')
 						$(this).remove('.fa-minus')
 					}
-				})
-				$('.content').css('display','none')
+				})*/
 			})
-		
-		
-
-		</script>
-	
-		
-	</div>
-	
+		</script>		
+	</div>	
 </body>
 </html>
