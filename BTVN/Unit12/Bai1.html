@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<script type="text/javascript " src="jquery-3.3.1.min.js"></script>
+	<div id="body">
+		
+		<div id="start">
+			<div id="demo">
+				<h1 style="margin-left: 50px;">jQuery Steps</h1>
+				<div class="clear"></div>
+			</div>			
+			<div id="menu">
+				<ul>
+					<li class="item"><a href="">Getting Strarted</a> </li>
+					<li class="item"><a href="">Examples</a> </li>
+					<li class="item"><a href="">Documentation</a> </li>
+					<li class="item"><a href="">Bootgrid</a> </li>
+					<li class="item"><a href="">Blog</a> </li>
+					<li class="item"><a href="">GitHub</a> </li>
+					<li class="item"><a href="">About</a> </li>
+				</ul>
+				<div class="clear"></div>
+			</div>				
+		</div>
+		<div class="clear"></div>
+		<div id="mid">
+			<div id="mid1">
+				<ul id="menu2" style=" padding-left: 0px;width: 100%">
+					<li class="item1"><a href="">Basic Exemple</a></li>
+					<li class="item1"><a href="">Basic Form Exmple</a></li>
+					<li class="item1"><a href="">I Studing HTML</a></li>
+					<li class="item1"><a href="">Sign in </a></li>
+					<li class="item1"><a href="">Zent Cooding School</a></li>
+					<li class="item1"><a href="">Zent Group</a></li>
+					<li class="item1"><a href="">Nguyễn Thành Long</a></li>
+					<li class="item1"><a href="">Admin Dev</a></li>
+				</ul>
+				<div class="clear"></div>
+
+			</div>
+
+			<div id="mid2">
+				<div id="mid2-1">
+
+				<ul style="list-style: none;height: 50px">
+					<li class="item2">1. Account</li>
+					<li class="item2">2. Profile</li>
+					<li class="item2">3. Hints</li>
+					<li class="item2">4. Finish</li>
+				</ul>
+				<div class="clear"></div>
+				<div id="mid2-2">
+					<h3>User name*</h3>
+					<input type="text" name="" id="name" required="">
+					<p class="err" id="errorName"></p>
+					<h3>Password*</h3>
+					<input type="password" name="" id="password" required="">
+					<p class="err" id="errorPassword"></p>
+					<h3>Confirm Password*</h3>
+					<input type="password" name="" id="passwordagain">
+					<p class="err" id="errorPasswordagain"></p>
+					(*)Mandatory
+
+				</div>
+
+				<div id="mid2-3">
+					<h3>First name*</h3>
+					<input type="text" name="" id="firstname" required="">
+					<p class="err" id="errorFirstname"></p>
+					<h3>Last Name*</h3>
+					<input type="text" name="" id="lastname" required="">
+					<p class="err" id="errorLastname"></p>
+					<h3>Email*</h3>
+					<input type="email" name="" id="email">
+					<p class="err" id="errorEmail"></p>
+					<h3>Address*</h3>
+					<input type="text" name="" id="address">
+					<p class="err" id="errorAddress"></p>
+					(*)Mandatory
+
+				</div>
+
+				<div id="mid2-4">
+					 Kích vào ô tròn bên này<input type="radio" name="">để xác nhận và ấn Next để được đăng ký.
+					
+				</div>
+
+				<div class="clear"></div>
+				
+				<button id="add" id="click" onclick="click" style="float: right;
+				margin-right: 50px;">Next</button>
+				<button id="comeback" id="click" onclick="click" style="float: right;">Comeback</button>
+				
+			</div>
+		</div>
+			
+		</div>
+	</div>
+	<script type="text/javascript">
+		function validateEmail(email) {
+	    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	    return re.test(String(email).toLowerCase());
+	}
+	document.getElementById('add').addEventListener('click',function(e){
+		e.preventDefault();
+
+		var name=document.getElementById('name');
+		var password=document.getElementById('password');
+		var passwordagain=document.getElementById('passwordagain');
+		var email=document.getElementById('email');
+		var firstname=document.getElementById('firstname');
+		var lastname=document.getElementById('lastname');
+		var address=document.getElementById('address');
+
+		
+	   
+			if(name.value.trim()==''){
+				document.getElementById('errorName').innerHTML='Vui long nhap ten!!!';
+				
+			}
+			else if(name.value.length<=6){
+				document.getElementById('errorName').innerHTML='Ten phai lon hon 8 ki tu!!!';
+				
+			}
+			else{
+				document.getElementById('errorName').innerHTML='';
+				
+			}
+		
+
+		
+			if(password.value.trim()==''){
+				document.getElementById('errorPassword').innerHTML='Vui long nhap mat khau!!!';
+				
+			}
+			else if(password.value.length < 5 || password.value.length >10 ){
+				document.getElementById('errorPassword').innerHTML='Mật khẩu phải lớn hơn 5 và nhỏ hơn 10';
+				
+			}
+			else{
+				document.getElementById('errorPassword').innerHTML='';
+				
+			}
+		
+
+		
+			if (passwordagain.value.trim()=='') {
+				document.getElementById('errorPasswordagain').innerHTML='Vui lòng nhập lại mật khẩu,please';
+				
+			}
+			else if (passwordagain.value!=password.value) {
+				document.getElementById('errorPasswordagain').innerHTML='Bạn đã nhập sai mk,please nhập đúng mk';
+				
+			}
+			else{
+				document.getElementById('errorPasswordagain').innerHTML='';
+				
+			}
+
+		
+
+	
+
+			if(firstname.value.trim()==''){
+				document.getElementById('errorFirstname').innerHTML='Vui long nhap ten!!!';
+			
+			}
+			else if(firstname.value.length<=5){
+				document.getElementById('errorFirstname').innerHTML='Ten phai lon hon 5 ki tu!!!';
+				
+			}
+			else{
+				document.getElementById('errorName').innerHTML='';
+			
+			}
+		
+
+
+
+			if(lastname.value.trim()==''){
+				document.getElementById('errorLastname').innerHTML='Vui long nhap ho!!!';
+				
+			}
+
+
+			if (email.value.trim()=='') {
+			//Kiem tra ten
+			document.getElementById('errorEmail').innerHTML='Vui lòng nhập email, please';
+			
+		}
+		else if(validateEmail(email.value)){
+			document.getElementById('errorEmail').  innerHTML=''
+		
+		}
+		else{
+			document.getElementById('errorEmail').innerHTML='Please nhập đúng định dạng';
+			
+		}
+
+		if(address.value.trim()==''){
+			document.getElementById('errorAddress').innerHTML='Vui long nhap que quan!!!';
+			
+		}
+		
+	
+
+		if (name !="" && password !="" ) {
+			
+			$(document).ready(function(){
+				$("#add").on("click",function(a){
+					a.preventDefault();
+					$("#mid2-2").hide(1000)
+					$("#mid2-3").show(1000)					
+				})
+
+
+			})
+
+		}
+		 if(firstname !="" && lastname !="" && email !="" && address !=""){
+			$("#add").on("click",function(){
+						$("#mid2-3").hide(1000)
+						$("#mid2-4").show(1000)
+
+					})
+		}
+		})
+	
+
+	</script>
+	
+		
+
+</body>
+</html>
