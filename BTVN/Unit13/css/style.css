@@ -1,0 +1,50 @@
+#strart{
+	
+	height: 500px;
+	background-image:url("https://genknews.genkcdn.vn/zoom/700_438/2016/1-the-hp-spectre-is-an-opulent-laptop-1461211911577.jpg"); 
+}
+.item{
+	text-decoration: none;
+
+}
+
+
+#strart ul{
+	list-style: none;
+	padding-left: 300px;
+}
+.item a{
+	float: left;
+	padding-left: 10px;
+	line-height: 50px;
+	color: white;
+}
+.clear{
+	clear: both;
+}
+#mid1 i{
+	padding-left: 150px;
+}
+#mid1{
+	margin-top: 50px;
+}
+#mid2 img{
+	height: 100%;
+	width:100%;
+}
+.row{
+	height: 300px;
+}
+#mid{
+	height: 400px;
+	width: 100%;
+	background-color: orange;
+}
+#mid p{
+	padding-top: 50px;
+}
+@media(max-width: 720px){
+	#strart{
+		
+	}
+}
