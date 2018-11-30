@@ -1,0 +1,270 @@
+.item{
+	text-decoration: none;
+	float: left;
+	margin-top: 20px;
+	padding-left: 20px;
+}
+.item:hover{
+	background-color: white;
+}
+.row{
+	width: 100%;
+}
+#background{
+	
+	background-size: cover;
+	background-image: url("../images/homebg.jpg");
+	height: 600px;
+	width: 100%;
+
+}
+.hover{
+	display: none;
+}
+#start ul{
+	list-style: none;
+
+}
+
+.button-element {
+	width: 20px;
+	height: 20px;
+	margin: 3px;
+	cursor: pointer;
+	border-radius: 10px;
+	margin-top: 250px;
+	border:none;
+
+}
+.button-element:hover{
+	background-color: orange;
+}
+#slide-show{
+	height: 100px;
+	padding-top: 250px;
+	
+}
+.div-slide{
+	color: white;
+	
+}
+#div2{
+	display: none;
+}
+#div3{
+	display: none;
+}
+#img2{
+	display: none;
+}
+#img3{
+	display: none;
+}
+#img4{
+	display: none;
+}
+#img2-2{
+	display: none;
+}
+#img3-3{
+	display: none;
+}
+.img-fluid{
+	width: 100%;
+}
+.div-radius {
+	background-color: blue;
+	border-radius: 100px;
+}
+#title-tab>div{
+	position: relative;
+}
+#title-tab>div>div{
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	top: 30%;
+}
+.button1-element{
+	width: 20px;
+	height: 10px;
+	border:none;
+}
+#bghv1{
+	display: none;
+}
+.button1-element:hover{
+	background-color: orange;
+}
+.btt{
+	background-color: #DCDCDC;
+	color: white;
+	border: none;width: 150px;height: 50px
+}
+.btt:hover {
+	background-color: orange;
+
+}
+.icon{
+	position: absolute;
+	
+	left: 10%;
+	margin-left: 70px;
+	margin-top: 50px;
+}
+.icon>div{
+	position: relative;
+
+}
+.iconbg1:hover{
+	background-color: orange;
+}
+.skmenubg{
+	position: relative;
+	 float: left; 
+	padding-left: 20px;
+}
+.content1{
+	position: absolute;
+	float: left;
+	padding-left: 20px;
+	
+}
+.info-iconbg >div{
+	float: left;
+	position: relative;
+}
+/* .info-iconbg:hover img{
+	background-color: orange;
+} */
+.info-iconbg i{
+	position: absolute;
+	float: left;
+}
+.info-iconbg:hover i{
+	color: orange;
+}
+.late{
+	background-color: #1C1C1C;
+	color: white;
+}
+.late a{
+	color: white;
+}
+.late:hover>div>div>a{
+	color: orange;
+}
+.late:hover>div>div>div>a{
+	color: yellow;
+}
+.team-avt{
+	position: relative;
+}
+.hover{
+	position: absolute;
+	bottom: 40%;
+	height: 100px;
+	background-color: #FF7F50;
+	margin-left: 20%;
+}
+.clear{
+	clear: both;
+}
+
+  .hover{
+	opacity: 0.8;
+}
+ .hover{
+	color: white;
+}
+.overlay{
+	height: 100%;
+    background-color: #0000006e;
+}
+
+/* .team-avt:hover>img>div{
+	display: block;
+	} */
+
+	.counter{
+		background: url(../images/counterbg.jpg) no-repeat top center;
+		background-size: cover;
+	}
+	.counter .main_counter_area{}
+	.counter .main_counter_area{
+		padding:80px 20px;
+	}
+	.counter .main_counter_area .single_counter{}
+	.counter .main_counter_area .single_counter .single_counter_item{
+
+	}
+
+	.counter .main_counter_area .single_counter h2{
+		color:#fff;
+		font-size:2.8125rem;
+	}
+	.counter .main_counter_area .single_counter i{
+		color:#ff7200;
+		font-size:1.875rem;
+		display: inline-block;
+		margin-top:20px;
+	}
+	.counter .main_counter_area .single_counter p{
+		color:#fff;
+		font-size:0.8125rem;
+	}
+	.single_counter{
+		margin-left: 120px;
+	}
+
+	
+	*{
+		padding:0;	
+		margin:0;	
+	}
+	.navbar{
+		background-color: #C6E2FF !important;
+	}
+
+
+	#lategame{
+		height: 100px;
+		color: white;
+		background-color: black;
+	}
+	#lategame div{
+		line-height: 100px;
+
+	}
+	@media only screen and (max-width: 576px) {
+		.content123 {
+			font-size: 12px;
+		}
+		.contenh1{
+			font-size: 30px !important ;
+
+		}
+		.contenp{
+			font-size: 20px !important ;
+
+		}
+		.design{
+			font-size: 10px !important ;
+
+		}
+		#backgroud{
+			background-image: max-width;
+		}
+		.skmenubg{
+			width: 130px !important;
+			float: left !important;
+			outline-width: 30px;
+			margin-left: 30px !important;
+		}
+		#ntl{
+			font-size: 10px !important;
+		}
+
+
+	}
