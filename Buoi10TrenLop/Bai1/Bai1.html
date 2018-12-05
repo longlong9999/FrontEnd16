@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="../jquery-3.3.1.min.js">
+		
+	</script>
+</head>
+<body>
+
+<!-- 	<div id="content">
+	<p class="text">Lorem ipsum dolor sit.</p>
+	<p class="text">Lorem ipsum dolor sit.</p>
+	<p class="text">Lorem ipsum dolor sit.</p>
+	<p class="text">Lorem ipsum dolor sit.</p>
+</div>
+
+<ul>
+	<li class="item">Home<li>
+	<li class="item">Home<li>
+	<li class="number">Home<li>
+	<li class="item">Home<li>
+	<li class="item">Home<li>
+</ul>
+<h1>Baby Group</h1>
+<input type="" name="">
+<button>Click me</button> -->
+  	<input type="text" id="input" name="">
+	<button id="add">Add</button>
+	<input type="button" name="" id="Delete-All" value="toggle delete" class="checkbox">
+<table>
+	
+</table>
+	
+
+	<script type="text/javascript">
+		$(function () {
+	     /* $('#content .text').css('color', 'blue')
+	      $('h1').text("<p>olalala</p>")*/
+	   /*   $('input').val("1999")*/
+	     
+	     /* $('.item').removeClass('number')*/
+	      // $('button').click(function(){
+	      // 	alert('Baby girl') 
+	      // })
+	      $('#add').click(function(){
+	      	var input=$('#input').val()
+	      	$('table').prepend(`<tr>
+		      		<td>
+		      		   <input type="checkbox" name="" class="checkbox">
+		      		</td>
+		      		<td >
+		      		    `+ input +`
+		      		</td>
+		      		<td><input type="button" class="edit" value="Edit" content="`+input+`"> </td>
+		      		<td>
+		      		    <input type="button" name="" class="del" value="delete">
+		      		</td>
+		      		</tr>`);
+
+	      	$('#input').val("");
+	      })
+	      $('body').on('click','.del',function(){
+	      	$(this).parent().parent().remove();
+	      });
+
+	      $('#Delete-All').click(function(){
+	      	var checkbox=$('.checkbox');
+	      	for(var i=checkbox.length-1;i>=0;i--){
+	      		checkbox[i].checked= !checkbox[i].checked;
+	      	}
+	      })
+
+	      $('body').on('click','.edit',function(){
+	      	var content= $(this).attr('content');
+	      	$('#input').val(content)
+	      	$('#add').text('Update').attr('id','update')
+	      })
+		})
+	</script>
+</body>
+</html>

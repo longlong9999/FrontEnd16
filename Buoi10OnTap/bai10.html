@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style type="text/css">
+	h2{
+		text-align: center;
+	}
+	#slider{
+		width: 700px;
+		height: 600px;
+		padding-left: 25%;
+		
+	}
+	#img2{
+		width: 700px;
+		height: 600px;
+		padding-left: 25%;
+		display: none;
+	}
+	#img3{
+		width: 700px;
+		height: 600px;
+		padding-left: 25%;
+		display: none;
+	}
+	#img4{
+		width: 700px;
+		height: 600px;
+		padding-left: 25%;
+		display: none;
+	}
+	.button1{
+		cursor: pointer;
+		opacity: 0.2;
+		background: black;
+		color: white;
+		width: 4%;
+		height: 50px;
+		position: absolute;
+    	left: 26%;
+    	top:68%;
+    	font-size: 30px;
+	}
+	.button2{
+		cursor: pointer;
+		opacity: 0.2;
+		background: black;
+		color: white;
+		width: 4%;
+		height: 50px;
+		position: absolute;
+    	right: 24%;
+    	top:68%;
+    	font-size: 30px;
+	}
+	.button1:hover{
+		opacity: 2;
+		background: black;
+	}
+	.button2:hover{
+		opacity: 2;
+		background: black;
+	}
+	.tieude{
+		border-style: solid;
+   		border-width: 1px;
+   		border-color: black;
+		border-radius: 135px;
+		width: 70%;
+		margin-left: 16%;
+		margin-bottom: 5%;
+		background-image: url(http://hinhnenpowerpointdep.com/uploads/images/20-anh-dong-ve-nhung-con-mua-bat-chot-tuyet-dep-1494552371-1.gif);
+			}
+	.tieude1{
+		font-style: Arial;
+		color: red;
+
+		
+	}
+	div{
+	
+
+	}
+	.girl1{
+		padding-left: 22%;
+	}
+	.girl2{
+		padding-left: 22%;
+		display: none;
+	}
+	.girl3{
+		padding-left: 22%;
+		display: none;
+	}
+	.girl4{
+		padding-left: 22%;
+		display: none;
+	}
+	
+</style>
+<body>
+	<div class="tieude">
+		<h2 class="tieude1">Thư viện girl xinh</h2>	
+	</div>
+	<div>
+		<input id="button1" class="button1" type="button" name="" onclick="prev()" value="<">
+		<input id="button2" class="button2" type="button" name="" onclick="next()" value=">">
+	</div>
+	<div class="contents">
+		<img id="slider" src="https://thuthuatnhanh.com/wp-content/uploads/2018/07/anh-girl-xinh-gai-dep.jpg" alt="">
+		>
+	</div>
+	<div class="contents">
+		<img id="img2" src="http://vui.us/images3/2017/09/15/con-gai-deo-kinh-thuong-rat-xinh-59bb262234973.jpg" alt="">
+		
+		</div>
+	<div class="contents">
+		<img id="img3" src="http://1.bp.blogspot.com/-WjybKo1sByw/VkL5Ig7wBoI/AAAAAAAAAg8/rd3OQAh36bA/s1600/anh-girl-xinh-khoe-veu%2B%25281%2529.jpg" alt="">
+	
+	</div>
+		<div class="contents">
+		<img id="img4" src="https://danongonline.com.vn/wp-content/uploads/2017/10/2078572814664298901043646837405887005130958o-1508409063424.jpg" alt="">
+	
+	</div>
+</body>
+<script type="text/javascript">
+	var images = [
+        "https://thuthuatnhanh.com/wp-content/uploads/2018/07/anh-girl-xinh-gai-dep.jpg",
+        "http://vui.us/images3/2017/09/15/con-gai-deo-kinh-thuong-rat-xinh-59bb262234973.jpg",
+        "http://1.bp.blogspot.com/-WjybKo1sByw/VkL5Ig7wBoI/AAAAAAAAAg8/rd3OQAh36bA/s1600/anh-girl-xinh-khoe-veu%2B%25281%2529.jpg",
+        "https://danongonline.com.vn/wp-content/uploads/2017/10/2078572814664298901043646837405887005130958o-1508409063424.jpg",
+        "https://danongonline.com.vn/wp-content/uploads/2017/10/19601302-1777129645951119-6075187514159902493-n-1503761184211-1504021541854-1.jpg",
+        "https://danongonline.com.vn/wp-content/uploads/2017/10/photo-7-1467618024092.jpg"
+    ];
+    var num = 0;
+   
+    function next() {
+        var slider = document.getElementById("slider");
+        num++;
+        if(num >= images.length) {
+            num = 0;
+        }
+        slider.src = images[num];
+
+    }
+
+    function prev() {
+        var slider = document.getElementById("slider");
+        num--;
+        if(num < 0) {
+            num = images.length-1;
+        }
+        slider.src = images[num];
+    }
+</script>
+            	
+            
+ 
+
+</html>

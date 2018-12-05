@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#size").on("change",function(){
+			var value=$(this).val();
+			if (value==16) {
+				$("#price").text("Gia la 10 tỉ")
+			}
+			if (value==32) {
+				$("#price").text("Gia la 20 trieu")
+			}
+			if (value==64) {
+				$("#price").text("Gia la 30 trieu")
+			}
+		})
+	})
+</script>
+<b>iphone 6</b>
+Bo nho:<select id="size" name="size">
+	<option value="16">16 GB</option>
+	<option value="32">32 GB</option>
+	<option value="64">64 GB</option>
+</select>
+<br>
+<div id="price">
+	
+</div>
+
+	
+</div>
+<script type="">
+	$(document).ready(function(){
+		$("#show").on("click",function(){
+			$("#selection").show(1000)
+		})
+		$("#hide").on("click",function(){
+			$("#selection").hide(1000)
+		})
+		$("#toggle").on("click",function(){
+			$("#selection").toggle()
+		})
+	})
+</script>
+<div id="selection" style="width: 100px;height: 100px;background-color: blue"></div>
+	<input id="show" type="button" name="" value="Show">
+	<input id="hide" type="button" name="" value="Hide">
+	<input id="toggle" type="button" name="" value="Toggle">
+     <input type="button" value="Click" name="" id="input">
+	<div id="section">
+		<p>The p</p>
+		<span>The span</span>
+		<ul>
+			<li>The li1</li>
+			<li>The li2</li>
+			<li class="choose">The li1The li1</li>
+			<li>The li4</li>
+			<li>The li5</li>
+		</ul>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#input").on("click",function(){
+	//			$("#section").children().eq(1).css("color","blue");
+	//			$("#section").children().prev(1).css("color","red");//lấy ra thằng cùng cha đứng trước nó khi để  id section vào<li>//
+				$("#section").children().not(".choose").css("color","green");
+			});
+		})
+
+
+	</script>
+
+
+</body>
+</html>

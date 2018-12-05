@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<style type="text/css">
+	body{
+		background-color: black;
+	}
+		.item{
+			float: left;
+			list-style: none;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		#menu>ul{
+			background-color: green;
+			height: 50px;
+		}
+		.item>a{
+			line-height: 50px;
+			color: red;			
+			text-decoration: none;
+			/*text-decoration: none; mất gạch chân*/
+		}
+		.item>i{
+			line-height: 50px;
+			color: red;
+		}
+		.item:first-child{
+			line-height: 50px;
+			color: red;
+			display: none;
+
+
+		}
+		@media (max-width: 600px) {
+			.item{
+				display: none;
+			}
+			.item:first-child{
+				display: block;
+			}
+			.item:first-child:hover~.item{
+				float: none;
+				display: block;
+				width: 20px;
+				
+			}
+			#menu>ul:hover>li.item{
+				float: none;
+				display: block;
+				background:yellow;
+			}
+			#menu>ul:hover>li.item:hover{
+				background: blue;
+			}
+		}
+	</style>
+</head>
+<body>
+	<nav id="menu">
+		<ul>
+			<li class="item"><a href="#"><i class="fas fa-bars"></i></a></li>
+			<li class="item"><a href="#">Home</a></li>
+			<li class="item"><a href="#">About</a></li>
+			<li class="item"><a href="#">About</a></li>
+			<li class="item"><a href="#">Course</a></li>
+			<li class="item"><a href="#">News</a></li>
+			<li class="item"><a href="#">Contact</a></li>
+			<li class="item"><a href="#">Contact</a></li>
+			<li class="item"><a href="#">Contact</a></li>
+			<li class="item"><a href="#">Contact</a></li>
+		</ul>
+	</nav>
+</body>
+</html>

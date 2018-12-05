@@ -1,0 +1,78 @@
+
+.content-left {
+	width: 100%;
+}
+
+#logo {
+	float: left;
+	width: 30%;
+}
+#logo>img{
+	height: 100px;
+	float: left;
+	width: 50%;
+}
+#menu{
+	width: 70%;
+	float: right;
+	
+}
+#menu ul {
+	padding: 0;
+	float: right;
+}
+.item>a{
+	text-decoration: none;
+}
+.item{
+	float: right;
+	width: 15%;
+	list-style: none;
+
+}
+#menu ul li#user-avatar {
+	width: 40%;
+}
+.item>a >img{
+	height: 50px;
+	width: 10%;
+	float: left;
+}
+.item>a> div {
+	width: 90%;
+	height: 50px;
+	line-height: 50px;
+	float: left;
+
+}
+.clear {
+	clear: both;
+}
+#left{
+	width: 20%;
+	float: left;
+}
+#mid{
+	width: 60%;
+	float: left;	
+}
+#right{
+	width: 20%;
+	float: left;
+}
+.conten{
+    padding-left: 10px;
+	height: 50px;
+	list-style: none;
+}
+.conten:hover{
+	background-color: orange;
+}
+.conten>a{
+    line-height: 50px;
+	text-decoration:none;
+	
+}
+.conten>a>i{
+	padding-right: 10px;
+}

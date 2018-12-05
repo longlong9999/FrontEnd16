@@ -56,7 +56,7 @@
 				<div class="clear"></div>
 				<div id="mid2-2">
 					<h3>User name*</h3>
-					<input type="text" name="" id="name" required="">
+					<input type="text" name="" id="name" required="" >
 					<p class="err" id="errorName"></p>
 					<h3>Password*</h3>
 					<input type="password" name="" id="password" required="">
@@ -106,25 +106,19 @@
 	    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 	    return re.test(String(email).toLowerCase());
 	}
-	document.getElementById('add').addEventListener('click',function(e){
+	document.getElementById('add').addEventListener('click',function checkTab1(e){
 		e.preventDefault();
 
 		var name=document.getElementById('name');
 		var password=document.getElementById('password');
+
 		var passwordagain=document.getElementById('passwordagain');
-		var email=document.getElementById('email');
-		var firstname=document.getElementById('firstname');
-		var lastname=document.getElementById('lastname');
-		var address=document.getElementById('address');
+	
 
 		
 	   
 			if(name.value.trim()==''){
 				document.getElementById('errorName').innerHTML='Vui long nhap ten!!!';
-				
-			}
-			else if(name.value.length<=6){
-				document.getElementById('errorName').innerHTML='Ten phai lon hon 8 ki tu!!!';
 				
 			}
 			else{
@@ -161,75 +155,75 @@
 				document.getElementById('errorPasswordagain').innerHTML='';
 				
 			}
-
-		
-
-	
-
-			if(firstname.value.trim()==''){
-				document.getElementById('errorFirstname').innerHTML='Vui long nhap ten!!!';
-			
-			}
-			else if(firstname.value.length<=5){
-				document.getElementById('errorFirstname').innerHTML='Ten phai lon hon 5 ki tu!!!';
-				
-			}
-			else{
-				document.getElementById('errorName').innerHTML='';
-			
-			}
-		
-
-
-
-			if(lastname.value.trim()==''){
-				document.getElementById('errorLastname').innerHTML='Vui long nhap ho!!!';
-				
-			}
-
-
-			if (email.value.trim()=='') {
-			//Kiem tra ten
-			document.getElementById('errorEmail').innerHTML='Vui lòng nhập email, please';
-			
-		}
-		else if(validateEmail(email.value)){
-			document.getElementById('errorEmail').  innerHTML=''
-		
-		}
-		else{
-			document.getElementById('errorEmail').innerHTML='Please nhập đúng định dạng';
-			
-		}
-
-		if(address.value.trim()==''){
-			document.getElementById('errorAddress').innerHTML='Vui long nhap que quan!!!';
-			
-		}
-		
-	
-
-		if (name !="" && password !="" ) {
-			
-			$(document).ready(function(){
-				$("#add").on("click",function(a){
-					a.preventDefault();
-					$("#mid2-2").hide(1000)
-					$("#mid2-3").show(1000)					
-				})
-
-
 			})
 
-		}
-		 if(firstname !="" && lastname !="" && email !="" && address !=""){
-			$("#add").on("click",function(){
-						$("#mid2-3").hide(1000)
-						$("#mid2-4").show(1000)
 
+
+$("#add").on("click",function(a){
+
+	alert(name);
+	alert(password);
+	alert(passwordagain)
+	if (name !="" && password !="" && passwordagain !="" ) {
+		$(document).ready(function(){
+             	a.preventDefault();
+			var email=document.getElementById('email');
+			var firstname=document.getElementById('firstname');
+			var lastname=document.getElementById('lastname');
+			var address=document.getElementById('address');
+			
+			
+						$("#mid2-2").hide(1000)
+						$("#mid2-3").show(1000)					
 					})
-		}
-		})
+
+
+			
+
+				if(firstname.value.trim()==''){
+					document.getElementById('errorFirstname').innerHTML='Vui long nhap ten!!!';
+
+				}
+				else if(firstname.value.length<=5){
+					document.getElementById('errorFirstname').innerHTML='Ten phai lon hon 5 ki tu!!!';
+
+				}
+				else{
+					document.getElementById('errorName').innerHTML='';
+
+				}
+
+
+
+
+				if(lastname.value.trim()==''){
+					document.getElementById('errorLastname').innerHTML='Vui long nhap ho!!!';
+
+				}
+
+
+				if (email.value.trim()=='') {
+
+					document.getElementById('errorEmail').innerHTML='Vui lòng nhập email, please';
+
+				}
+				else if(validateEmail(email.value)){
+					document.getElementById('errorEmail').innerHTML=''
+
+				}
+				else{
+					document.getElementById('errorEmail').innerHTML='Please nhập đúng định dạng';
+
+				}
+
+				if(address.value.trim()==''){
+					document.getElementById('errorAddress').innerHTML='Vui long nhap que quan!!!';
+
+				}
+}
+
+	})	
+
 	
 
 	</script>
